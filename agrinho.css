@@ -1,0 +1,211 @@
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #2e7d32;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1b5e20;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Navegação */
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav a {
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: rgba(46, 125, 50, 0.7);
+}
+
+.nav a:hover {
+    background-color: rgba(46, 125, 50, 0.9);
+}
+
+/* Seções */
+.section {
+    padding: 3rem 1rem;
+}
+
+.section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2e7d32;
+}
+
+.dark {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.dark h2 {
+    color: white;
+}
+
+/* Cards de problemas */
+.problems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.problem-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.problem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.problem-card h3 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+/* Lista de consequências */
+.consequences-list {
+    list-style-position: inside;
+    columns: 2;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.consequences-list li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .consequences-list {
+        columns: 1;
+    }
+}
+
+/* Soluções */
+.solutions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.solution {
+    background-color: rgba(46, 125, 50, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #2e7d32;
+}
+
+.solution h3 {
+    color: #2e7d32;
+}
+
+.call-to-action {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: #2e7d32;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.footer a {
+    color: #4caf50;
+}
+
+.footer a:hover {
+    color: #81c784;
+}
+
+.license {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+}
