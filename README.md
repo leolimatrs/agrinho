@@ -1,6 +1,7 @@
 # agrinho
 
 Impacto do Desmatamento
+
 Este projeto é uma página web informativa que aborda os problemas, consequências e possíveis soluções relacionadas ao desmatamento. O objetivo é conscientizar sobre os impactos ambientais e sociais desse fenômeno global e incentivar ações individuais e coletivas em prol da preservação.
 
 📸 Captura de Tela
